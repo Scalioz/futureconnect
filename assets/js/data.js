@@ -34,6 +34,10 @@ const ICONS = {
   coins:'<circle cx="8" cy="8" r="6"/><path d="M18.09 10.37A6 6 0 1 1 10.34 18"/><path d="M7 6h1v4"/><path d="m16.71 13.88.7.71-2.82 2.82"/>',
   clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
   palm:'<path d="M13 8c0-2.76-2.46-5-5.5-5S2 5.24 2 8h2l1-1 1 1h4"/><path d="M13 7.14A5.82 5.82 0 0 1 16.5 6c3.04 0 5.5 2.24 5.5 5h-3l-1-1-1 1h-3"/><path d="M5.89 9.71c-2.15 2.15-2.3 5.47-.35 7.43l4.24-4.25.7-.7.71-.71 2.12-2.12c-1.95-1.96-5.27-1.8-7.42.35"/><path d="M11 15.5c.5 2.5-.17 4.5-1 6.5h4c2-5.5-.5-12-1-14"/>',
+  africa:'<path fill="currentColor" stroke-width=".4" d="M7.6 2.2L11 1.8l1.3.8 2.3-.2 1.6 1.2.8 1.8 1.4 2.2.8 2 2.4-.2-.6 1.8-1.8 2.2-1 1.6.2 2-1.8 2.6-1.4 2-1.6.4-1-1.4-.4-2.6-.8-2.4.2-2-1-1.4-1.2-.6-2 .4-2-.4-1.8-1.6-1-2 .4-2L4.4 4.2 6 3z"/><path fill="currentColor" stroke-width=".4" d="M19.6 15.6l.9.4-.4 3-.9 1.4-.6-.6.2-2.6z"/>',
+  middleeast:'<path fill="currentColor" stroke-width=".4" d="M2 6l4-1.5 3 .5 3-1.5 4 .5 4 1 2 2-.5 3-2.5 1-1.6-.8-1.2 1.2.8 1.2 2.6.4 2 1.8-1 2.6-3.6 2-3.4 1.6-2.2.4-1-2.4-2-3.4-1.8-3-1.6-2.2-1.6-2z"/>',
+  southasia:'<path fill="currentColor" stroke-width=".4" d="M7 2.5l3-.5 1.6 1.4 2-.4 1.4 1.6 2.6.4 2-.6 2 1.2-.6 1.8-2 .4-1 1.4-1.4.2-1 1.6-1 2.4-1.2 2.6-.8 2.6-.8 2-.8-1-.8-2.6-1-2.6-1.2-2.2-1.6-.4-1.8-1-.8-1.8 1.2-1.4 1.4-1-.4-2z"/><ellipse fill="currentColor" stroke-width=".4" cx="13.6" cy="20.8" rx=".8" ry="1.1"/>',
+  seasia:'<path fill="currentColor" stroke-width=".4" d="M3 2.5L7 2l2.6 1 2.4-.4 2 1.4.6 2.4 1.2 2-.6 2.2-1.8 1.2-1-1.2-1.2.6-.4 2-.4 2 .6 1.8-.8.6-1-2-.4-2.6-.6-2.2-1.6-1.2-1.2-2L4 5.6z"/><path fill="currentColor" stroke-width=".4" d="M6.4 15.6l1.8 1 2.6 3 .8 1.4-1 .4-2.4-2.4-1.8-2z"/><path fill="currentColor" stroke-width=".4" d="M14.4 14l2.6-1.2 2 .8.6 2.2-1.6 2.2-2.4.2-1.4-1.8z"/><path fill="currentColor" stroke-width=".4" d="M12.4 21.4l6 .4v.7l-6-.2z"/><path fill="currentColor" stroke-width=".4" d="M18.8 4.4l1 .6-.2 2.6-.8-.4zM20 9l1 .4-.2 2-1-.4z"/>',
   globe:'<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/>',
   plane:'<path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>',
   wa:'<path d="M4 20l1.4-4A8 8 0 1 1 8 18.6L4 20z"/><path d="M9 9c0 3 3 6 6 6l1-1-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2-1.5 1z"/>',
@@ -151,10 +155,10 @@ const DESTINATIONS = [
 ];
 
 const REGIONS = [
- {name:'Africa',countries:['Nigeria','Kenya','Ethiopia','Tanzania','Uganda','Ghana','Sudan','Somalia','Rwanda','Zambia','Zimbabwe','Cameroon','DR Congo','C\u00f4te d\u2019Ivoire','Senegal','Angola','Mozambique','Egypt','Libya','South Sudan'],langs:['English','French','Swahili','Amharic','Somali','Hausa','Portuguese','Arabic']},
- {name:'Middle East',countries:['Iraq','Oman','Yemen','Saudi Arabia','United Arab Emirates','Kuwait','Bahrain','Qatar'],langs:['Arabic','English']},
- {name:'South and Central Asia',countries:['Bangladesh','Maldives','Sri Lanka','Nepal','Afghanistan','Uzbekistan','Kazakhstan','Tajikistan','Turkmenistan'],langs:['Bengali','Dhivehi','Sinhala','Nepali','Dari','Pashto','Uzbek','Russian']},
- {name:'South East Asia',countries:['Myanmar','Indonesia','Malaysia','Vietnam','Cambodia','Philippines'],langs:['Burmese','Indonesian','Malay','Vietnamese','Khmer','English']}
+ {name:'Africa',icon:'africa',countries:['Nigeria','Kenya','Ethiopia','Tanzania','Uganda','Ghana','Sudan','Somalia','Rwanda','Zambia','Zimbabwe','Cameroon','DR Congo','C\u00f4te d\u2019Ivoire','Senegal','Angola','Mozambique','Egypt','Libya','South Sudan'],langs:['English','French','Swahili','Amharic','Somali','Hausa','Portuguese','Arabic']},
+ {name:'Middle East',icon:'middleeast',countries:['Iraq','Oman','Yemen','Saudi Arabia','United Arab Emirates','Kuwait','Bahrain','Qatar'],langs:['Arabic','English']},
+ {name:'South and Central Asia',icon:'southasia',countries:['Bangladesh','Maldives','Sri Lanka','Nepal','Afghanistan','Uzbekistan','Kazakhstan','Tajikistan','Turkmenistan'],langs:['Bengali','Dhivehi','Sinhala','Nepali','Dari','Pashto','Uzbek','Russian']},
+ {name:'South East Asia',icon:'seasia',countries:['Myanmar','Indonesia','Malaysia','Vietnam','Cambodia','Philippines'],langs:['Burmese','Indonesian','Malay','Vietnamese','Khmer','English']}
 ];
 
 const LANGUAGES = ['English','العربية','Français','Português','Kiswahili','አማርኛ','বাংলা','Русский','Soomaali','Hausa','دری','O\u02bbzbek','မြန်မာ','Bahasa Indonesia','Tiếng Việt','ދިވެހި'];
