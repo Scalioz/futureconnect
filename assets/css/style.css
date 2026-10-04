@@ -387,3 +387,8 @@ a.photo-card:hover{border-color:var(--lagoon);box-shadow:var(--shadow)}
 @media (max-width:640px){
   .nav.open{height:calc(100vh - 92px);height:calc(100dvh - 92px)}
 }
+
+.council-photo{aspect-ratio:1/1;overflow:hidden;background:var(--pearl)}
+.council-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.council-photo .sample-tag{z-index:1}
+.council-badge{position:absolute;right:14px;bottom:14px;z-index:1;width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.94);color:var(--harbour);display:grid;place-items:center;box-shadow:0 8px 20px -10px rgba(6,49,79,.5)}
