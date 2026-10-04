@@ -4,7 +4,7 @@ const IMG={
  "about-team": "assets/images/about-team.webp",
  "about-values": "assets/images/about-values.webp",
  "apply-start": "assets/images/apply-start.webp",
- "contact-office": "assets/images/contact-office.webp",
+ "contact-office": "assets/images/contact-reception.webp",
  "council-review": "assets/images/council-review.webp",
  "faq-help": "assets/images/faq-help.webp",
  "home-arrival": "assets/images/home-arrival.webp",
