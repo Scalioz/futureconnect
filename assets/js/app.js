@@ -2,7 +2,7 @@
 const $ = (s, el=document) => el.querySelector(s);
 const app = $('#app');
 const LOGO = window.__LOGO__, LOGO_W = window.__LOGO_WHITE__;
-const PHONE = '+91 96269 96260', TEL = 'tel:+919626996260', WA = 'https://wa.me/919626996260', MAIL = 'admin@thefutureconnect.com';
+const PHONE = '+91 96269 96260', TEL = 'tel:+919626996260', WA = 'https://wa.me/919626996260', MAIL = 'info@thefutureconnect.com';
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const typeChip = t => `<span class="chip ${t==='Automated'?'chip-auto':t==='Manual'?'chip-man':'chip-semi'}">${t}</span>`;
 const stars = r => '★★★★★'.slice(0, Math.round(r)) + ' ' + r.toFixed(1);

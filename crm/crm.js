@@ -335,7 +335,7 @@ function boot(){
   let signed = false; try { signed = sessionStorage.getItem('fc_crm') === '1'; } catch(e){}
   if (!signed){
     root.innerHTML = `<div class="login"><form class="box" id="login" novalidate><img src="${window.__LOGO__}" alt="Future Connect"><h1>Back office</h1><p class="sub">Staff sign-in · two-step verification</p>
-      <div class="field" style="margin-top:20px"><label for="u">Work email</label><input id="u" type="email" value="admin@thefutureconnect.com"></div>
+      <div class="field" style="margin-top:20px"><label for="u">Work email</label><input id="u" type="email" value="info@thefutureconnect.com"></div>
       <div class="field" style="margin-top:12px"><label for="p">Password</label><input id="p" type="password" value="demo-password"></div>
       <div class="field" style="margin-top:12px"><label for="o">6-digit code from your authenticator</label><input id="o" inputmode="numeric" maxlength="6" placeholder="Any 6 digits in this demo"></div>
       <p class="sub" id="lerr" style="color:var(--bad);margin-top:10px" hidden></p>
